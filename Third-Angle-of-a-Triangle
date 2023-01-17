@@ -1,0 +1,41 @@
+link to problem: https://www.codewars.com/kata/5a023c426975981341000014/train/java
+
+/** INSTRUCTIONS: 
+* You are given two interior angles (in degrees) of a triangle.
+
+* Write a function to return the 3rd.
+
+* Note: only positive integers will be tested.
+
+* https://en.wikipedia.org/wiki/Triangle **/
+
+
+//MY SOLUTION: 
+
+public class ThirdAngle {
+    public static int otherAngle(int angle1, int angle2) {
+        // Declare a variable to hold the third angle
+        int thirdAngle;
+        
+        // The sum of the interior angles of a triangle is always 180 degrees
+        // Subtract the sum of angle1 and angle2 from 180 to find the third angle
+        thirdAngle = 180 - (angle1 + angle2);
+        
+        // Return the value of the third angle
+        return thirdAngle;
+    }
+}
+
+// SAMPLE TESTING 
+
+//import org.junit.Test;
+//import static org.junit.Assert.assertEquals;
+//import org.junit.runners.JUnit4;
+
+//public class ThirdAngleTest {
+//    @Test
+//    public void testOtherAngle() {
+//        assertEquals(123, ThirdAngle.otherAngle(45,12));
+//        assertEquals(70, ThirdAngle.otherAngle(50,60));
+//    }
+//}
