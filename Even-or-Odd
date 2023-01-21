@@ -1,0 +1,29 @@
+
+THIS DOCUMENT SERVES AT THE FORMAT TO FOLLOW FOR EACH NEW KATA PROBLEM THAT IS UPLOAD FOR COHESIVENESS: 
+
+// LINK: 
+https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/java
+
+
+// INSTRUCTIONS: 
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+ 
+
+//MY SOLUTION: 
+- this area is your solution withinline comments 
+
+
+
+// SAMPLE TESTING: 
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import org.junit.runners.JUnit4;
+
+public class EvenOrOddTest {
+    @Test
+    public void testEvenOrOdd() {
+        EvenOrOdd eoo = new EvenOrOdd();
+        assertEquals("Even", eoo.even_or_odd(6));
+        assertEquals("Odd", eoo.even_or_odd(7));   
+        assertEquals("Even", eoo.even_or_odd(0));
+        assertEquals("Odd", eoo.even_or_odd(-1)); 
