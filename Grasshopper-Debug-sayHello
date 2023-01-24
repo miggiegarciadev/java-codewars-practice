@@ -1,0 +1,47 @@
+THIS DOCUMENT SERVES AT THE FORMAT TO FOLLOW FOR EACH NEW KATA PROBLEM THAT IS UPLOAD FOR COHESIVENESS: 
+
+// LINK: 
+https://www.codewars.com/kata/5625618b1fe21ab49f00001f/train/java
+
+
+// INSTRUCTIONS: 
+Debugging sayHello function
+The starship Enterprise has run into some problem when creating a program to greet everyone as they 
+come aboard. It is your job to fix the code and get the program working again!
+Example output:Hello, Mr. Spock
+
+
+ 
+
+//MY SOLUTION: 
+- this area is your solution withinline comments 
+
+
+
+// SAMPLE TESTING: 
+import java.util.Random;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class GrassHopperTest {
+    @Test
+    public void test1() {
+        assertEquals("Hello, Mr. Spock",
+        GrassHopper.sayHello("Mr. Spock"));
+    }
+    @Test
+    public void test2() {
+        assertEquals("Hello, Captain Kirk",
+        GrassHopper.sayHello("Captain Kirk"));
+    }
+    @Test
+    public void test3() {
+        assertEquals("Hello, Liutenant Uhura",
+        GrassHopper.sayHello("Liutenant Uhura"));
+    }
+    @Test
+    public void test4() {
+        assertEquals("Hello, Dr. McCoy",
+        GrassHopper.sayHello("Dr. McCoy"));
+    }
+}
