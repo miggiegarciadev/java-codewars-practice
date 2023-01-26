@@ -1,0 +1,47 @@
+THIS DOCUMENT SERVES AT THE FORMAT TO FOLLOW FOR EACH NEW KATA PROBLEM THAT IS UPLOAD FOR COHESIVENESS: 
+
+// LINK: 
+https://www.codewars.com/kata/555a67db74814aa4ee0001b5/train/java
+
+
+// INSTRUCTIONS: 
+In this Kata we are passing a number (n) into a function.
+Your code will determine if the number passed is even (or not).
+The function needs to return either a true or false.
+Numbers may be positive or negative, integers or floats.
+Floats with decimal part non equal to zero are considered UNeven for this kata.
+
+
+//MY SOLUTION: 
+- this area is your solution withinline comments 
+
+
+
+// SAMPLE TESTING: 
+import org.junit.Test;
+import org.junit.Before;
+import org.junit.After;
+import static org.junit.Assert.assertEquals;
+
+public class NumberTest {
+  private Number num;
+  
+  @Before
+  public void setUp() throws Exception {
+    num = new Number();
+  }
+
+  @After
+  public void setDown() throws Exception {
+    num = null;
+  }
+  
+  @Test
+  public void test() {
+    assertEquals(true, num.isEven(0));
+    assertEquals(false, num.isEven(0.5));
+    assertEquals(false, num.isEven(1));
+    assertEquals(true, num.isEven(2));
+    assertEquals(true, num.isEven(-4)); 
+  }
+}
